@@ -1,9 +1,9 @@
 {
-    "name":         "knplabs/gaufrette",
+    "name":         "jiajiagithub/gaufrette",
     "type":         "library",
     "description":  "PHP library that provides a filesystem abstraction layer",
     "keywords":     ["file", "filesystem", "media", "abstraction"],
-    "homepage":     "http://knplabs.com",
+    "homepage":     "https://github.com/jiajiagithub/Gaufrette",
     "license":      "MIT",
     "authors": [
         {
