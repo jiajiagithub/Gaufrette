@@ -59,9 +59,9 @@ class Filesystem implements FilesystemInterface
 
         $this->assertHasFile($sourceKey);
 
-        if ($this->has($targetKey)) {
-            throw new Exception\UnexpectedFile($targetKey);
-        }
+        // if ($this->has($targetKey)) {
+        //     throw new Exception\UnexpectedFile($targetKey);
+        // }
 
         if (!$this->adapter->rename($sourceKey, $targetKey)) {
             throw new \RuntimeException(sprintf('Could not rename the "%s" key to "%s".', $sourceKey, $targetKey));
@@ -134,7 +134,7 @@ class Filesystem implements FilesystemInterface
     {
         self::assertValidKey($key);
 
-        $this->assertHasFile($key);
+        // $this->assertHasFile($key);
 
         if ($this->adapter->delete($key)) {
             $this->removeFromRegister($key);
